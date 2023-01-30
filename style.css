@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+#apex-ip-modal {
+    display: none;
+    position: fixed;
+    z-index: 999999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.apex-ip-modal-position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    width: 100%;
+}
+.apex-ip-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    padding: 50px 30px;
+}
+
+.apex-ip-modal-close {
+    position: absolute;
+    top: 3px;
+    right: 13px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+.apex-ip-modal-close:hover,
+.apex-ip-modal-close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+.apex-ip-modal-content img{
+    width: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+.apex-ip-modal-content h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.apex-ip-modal-content ul{
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+.apex-ip-modal-content button{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    width: 100%;
+    border: initial;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.apex-ip-modal-content .change-country{
+    color: #000;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}
+
+@media(max-width:550px){
+    .apex-ip-modal-position{
+        width: 90%;
+    }
+}
